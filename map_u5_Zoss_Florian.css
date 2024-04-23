@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(255, 255, 186);
+}
+
+.title{position: fixed;
+    left: 20px;
+    text-decoration: underline;
+    
+}
+
+.map{position:absolute;
+    display: flex;
+    left: 20px;
+    top: 80px;
+}
+
+.Boungding_box_EckertIV{stroke: black;stroke-width: 0.05cm; fill:#25b6eb}
+.Graticule_EckertIV{stroke: black;stroke-width: 0.02cm; fill:none}
+
+
+.no_data{stroke: black;stroke-width: 0.01cm; fill:grey}
+.decrease{stroke: black;stroke-width: 0.01cm; fill:rgb(236, 182, 182)}
+.low{stroke: black;stroke-width: 0.01cm; fill:#eff3ff}
+.medium{stroke: black;stroke-width: 0.01cm; fill:#bdd7e7}
+.high{stroke: black;stroke-width: 0.01cm; fill:#6baed6}
+.very_high{stroke: black;stroke-width: 0.01cm; fill:#2171b5}
+
+/* Legende */
+.legende {
+    position: relative;
+    top: 100px;
+    left:40px;
+    padding: 10px;
+    outline: 2px solid black;
+    height: 230px;
+  }
+
+.leg_title{
+    font-size: 1.17em; 
+    font-weight: bold; 
+    margin-bottom: 0.5em;
+}
+.leg_list{list-style-type: none;
+    padding-left: 10px;
+}
+
+.no_data::before{content: "■"; 
+    color:grey;
+    font-size: 25px ;
+       
+}
+.decrease::before{content: "■"; 
+    color:rgb(236, 182, 182);
+    font-size: 25px ;   
+}
+.low_increase::before{content: "■"; 
+    color:#eff3ff;
+    font-size: 25px ;   
+}
+.medium_increase::before{content: "■"; 
+    color:#bdd7e7;
+    font-size: 25px ;   
+}
+.high_increase::before{content: "■"; 
+    color:#6baed6;
+    font-size: 25px ;   
+}
+.very_high::before{content: "■"; 
+    color:#2171b5;
+    font-size: 25px ;   
+}
+
+/* Kartenrandangaben */
+.Kartenrandangaben{position: fixed;
+    left: 20px;
+    bottom: 15px ;
+}
+ .zusatzangaben{list-style-type: none;
+    padding-left: 0
+}
